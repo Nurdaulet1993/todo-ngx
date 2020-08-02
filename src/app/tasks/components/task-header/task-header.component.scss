@@ -1,0 +1,17 @@
+.task-header {
+  padding: (20 / 16) * 1rem  0;
+
+  .card {
+    //box-shadow: 0 0 0.875rem 0 rgba(53,64,82,.05);
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(0, 0, 0,.5);
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: 1px solid transparent;
+  }
+}

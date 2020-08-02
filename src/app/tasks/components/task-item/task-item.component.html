@@ -1,0 +1,17 @@
+<div class="example-box" cdkDrag [class.done]="checked">
+  <mat-checkbox class="example-margin" [(ngModel)]="checked" (click)="updateStatus()"></mat-checkbox>
+  {{ task.body }}
+  <div class="icons">
+    <div class="example-button-container">
+      <button mat-mini-fab color="primary" aria-label="Example icon button with a filter list icon" (click)="openDialog()">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </div>
+    <div class="example-button-container" (click)="deleteTask(task.id)">
+      <button mat-mini-fab color="warn" aria-label="Example icon button with a plus one icon">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
+

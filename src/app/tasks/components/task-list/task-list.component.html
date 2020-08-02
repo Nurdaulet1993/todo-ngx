@@ -1,0 +1,7 @@
+<section class="task-list" *ngIf="tasks">
+  <div cdkDropList [cdkDropListData]="tasks" #dropList="cdkDropList" class="example-list" (cdkDropListDropped)="drop($event, tasks)">
+    <ng-container *ngFor="let task of tasks">
+      <app-task-item  [task]="task" (delete)="deleteTask($event)" (update)="updateTask($event)"></app-task-item>
+    </ng-container>
+  </div>
+</section>

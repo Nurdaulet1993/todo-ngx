@@ -1,0 +1,8 @@
+<header class="task-header">
+  <mat-card class="card">
+    <form [formGroup]="taskForm" (ngSubmit)="addTask()">
+      <input type="text" placeholder="То что нужно сделать" formControlName="body">
+    </form>
+  </mat-card>
+</header>
+
